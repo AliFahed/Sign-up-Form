@@ -69,9 +69,74 @@ body {
   color: rgb(0, 0, 255);
 }
 
+/* right side - form */
 .content {
   right: 0;
   width: 65%;
   
   background: #f1f1f1;
+  padding-top: 90px;
+  /* padding-left: 25px; */
+}
+
+.paragraph1,
+.paragraph2 {
+  margin: 0;
+}
+
+.paragraph3 {
+  margin-top: 30px;
+}
+
+.content > p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.form {
+  background: #fff;
+}
+
+.form-sheet {
+  padding: 20px 0 60px 40px;
+}
+
+form > h2 {
+  padding-bottom: 20px;
+  color: rgb(47, 46, 46);
+}
+
+button.createAccount {
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 10px 30px;
+  background: #537535;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: 1px solid #596D48;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.createAccount:hover {
+  background: #406d19;
+}
+
+p.Login {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+p.Login > a {
+  color: #406d19;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p.Login > a:hover {
+  color: #25410c;
 }
