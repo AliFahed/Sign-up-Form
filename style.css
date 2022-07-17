@@ -18,6 +18,7 @@ body {
   overflow-x: hidden
 }
 
+/* left side - image*/
 .image {
   left: 0;
   width: 35%;
@@ -28,6 +29,44 @@ body {
   background-position: center;
   width: 120vw;
   color: #fff;
+}
+
+.logo {
+  display: flex;
+  gap: .5rem;
+  background: rgb(0, 0, 0, .6);
+  margin-top: 170px;
+}
+
+.logo > img {
+  width: 50px;
+  height: 75px;
+  margin-left: 175px;
+  margin-top: 40px;
+}
+
+.logo > h1 {
+  font-size: 3.5rem;
+}
+
+.footer {
+  margin-top: 310px;
+  margin-left: 125px;
+}
+
+.projectGithubLink {
+  margin-left: 90px;
+}
+
+.credit-creator > a,
+.projectGithubLink > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.credit-creator > a:hover,
+.projectGithubLink > a:hover {
+  color: rgb(0, 0, 255);
 }
 
 .content {
