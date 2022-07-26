@@ -1,142 +1,53 @@
-:root {
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
 
-.split {
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden
-}
-
-/* left side - image*/
-.image {
-  left: 0;
-  width: 35%;
-
-  background-image: url("./images/green_plant.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 120vw;
-  color: #fff;
-}
-
-.logo {
+.split-screen {
   display: flex;
-  gap: .5rem;
-  background: rgb(0, 0, 0, .6);
-  margin-top: 170px;
+  flex-direction: column;
 }
 
-.logo > img {
-  width: 50px;
-  height: 75px;
-  margin-left: 175px;
-  margin-top: 40px;
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo > h1 {
-  font-size: 3.5rem;
+.left {
+  height: 200px;
+  flex-direction: column;
+  background-image: url(./images/green_plant.jpg);
+  background-size: cover;
 }
 
-.footer {
-  margin-top: 310px;
-  margin-left: 125px;
+.right {
+  flex-direction: column;
 }
 
-.projectGithubLink {
-  margin-left: 90px;
-}
+@media screen and (min-width: 900px) {
+    .split-screen {
+      flex-direction: row;
+      height: 100vh;
+    }
 
-.credit-creator > a,
-.projectGithubLink > a {
-  color: #fff;
-  font-weight: 600;
-}
+    .left,
+    .right {
+      display: flex;
+      /* width: 50%; */
+      height: auto;
+    }
 
-.credit-creator > a:hover,
-.projectGithubLink > a:hover {
-  color: rgb(0, 0, 255);
-}
+    .left {
+      width: 40%;
+    }
 
-/* right side - form */
-.content {
-  right: 0;
-  width: 65%;
-  
-  background: #f1f1f1;
-  padding-top: 90px;
-  /* padding-left: 25px; */
-}
-
-.paragraph1,
-.paragraph2 {
-  margin: 0;
-}
-
-.paragraph3 {
-  margin-top: 30px;
-}
-
-.content > p {
-  font-weight: bold;
-  font-size: 1.3rem;
-  padding-left: 40px;
-  padding-right: 10px;
-}
-
-.form {
-  background: #fff;
-}
-
-.form-sheet {
-  padding: 20px 0 60px 40px;
-}
-
-form > h2 {
-  padding-bottom: 20px;
-  color: rgb(47, 46, 46);
-}
-
-button.createAccount {
-  margin-top: 40px;
-  margin-left: 40px;
-  padding: 10px 30px;
-  background: #537535;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border: 1px solid #596D48;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button.createAccount:hover {
-  background: #406d19;
-}
-
-p.Login {
-  font-weight: 500;
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-p.Login > a {
-  color: #406d19;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-p.Login > a:hover {
-  color: #25410c;
+    .right {
+      width: 60%;
+    }
 }
