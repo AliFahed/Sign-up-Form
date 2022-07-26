@@ -83,16 +83,6 @@ body {
   margin: 0;
 }
 
-.form {
-  background: #fff;
-  width: 100%;
-}
-
-form h2 {
-  text-align: center;
-  color:rgb(54, 54, 54);
-}
-
 .createAccount-btn {
   width: 200px;
   margin-top: 30px;
@@ -126,6 +116,54 @@ form h2 {
 
 .login > a:hover {
   color: #25410c;
+}
+
+/* form */
+.form-section {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 10px 6px -6px #777;
+  padding: 5px 0 10px;
+}
+
+form h2 {
+  text-align: center;
+  color:rgb(54, 54, 54);
+}
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 400px;
+}
+
+label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  color: #18220f;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  width: 90%;
+  height: 33px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+input:focus {
+  border-color: blue;
 }
 
 @media screen and (min-width: 900px) {
@@ -192,6 +230,7 @@ form h2 {
 
     form h2 {
       padding-left: 30px;
+      text-align: left;
       color:rgb(54, 54, 54);
     }
 }
