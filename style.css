@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: 16px;
+  background: #f1f1f1;
 }
 
 .split-screen {
@@ -24,6 +25,39 @@ body {
   flex-direction: column;
   background-image: url(./images/green_plant.jpg);
   background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.left a {
+  color: #fff;
+}
+
+.left a:hover {
+  color: grey;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sidebar > img {
+  width: 65px;
+  height: 60px;
+}
+
+.image-credit {
+  margin-bottom: 0;
+}
+
+.projectGithubLink {
+  margin: 5px 0 20px;
 }
 
 .right {
@@ -31,6 +65,8 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+    
+    /* page structure */
     .split-screen {
       flex-direction: row;
       height: 100vh;
@@ -38,8 +74,7 @@ body {
 
     .left,
     .right {
-      display: flex;
-      /* width: 50%; */
+      display: block;
       height: auto;
     }
 
@@ -49,5 +84,32 @@ body {
 
     .right {
       width: 60%;
+    }
+
+    /* left-side */
+    .left {
+
+    }
+
+    .sidebar {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100px;
+      margin-top: 160px;
+    }
+
+    .left-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 370px;
+    }
+
+    .image-credit {
+      margin: 0;
+    }
+
+    .projectGithubLink {
+      margin-top: 12px;
     }
 }
