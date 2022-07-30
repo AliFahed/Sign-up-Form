@@ -166,6 +166,10 @@ input:focus {
   border-color: blue;
 }
 
+input:valid {
+  border-color: green;
+}
+
 @media screen and (min-width: 900px) {
     
     /* page structure */
